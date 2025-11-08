@@ -19,7 +19,7 @@ const App = () => {
   const deleteNote = (idx) =>{
     const copyTask = [...task]
 
-    copyTask.splice(idx,1) // splice method given index se array ko todna chalu karegi aur agar baadme 1 hai toh 1 element todegi , isi tarah 2,3,4 hoga toh utne elements todegi
+    copyTask.splice(idx,1) // splice method , given index se array ko todna chalu karegi aur agar baadme 1 hai toh 1 element todegi , isi tarah 2,3,4 hoga toh utne elements todegi
      
     setTask(copyTask)
 
@@ -72,7 +72,7 @@ const App = () => {
                   <h3 className="leading-tight font-bold text-xl mb-3">{elem.title}</h3>
                   <p className="text-gray-500">{elem.details}</p>
                 </div>
-                <button onClick={(idx) => {
+                <button onClick={() => {
                   deleteNote(idx)
                 }} className="bg-red-600 text-white py-1 rounded active:scale-95 cursor-pointer ">Delete Note</button>
               </div>
