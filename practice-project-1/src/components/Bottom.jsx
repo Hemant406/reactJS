@@ -2,8 +2,8 @@ import React from 'react'
 
 const Bottom = () => {
   return (
-    <div className='flex  mt-10'>
-      <div className='w-1/2 flex flex-col'>
+    <div className='flex  mt-10 gap-5'>
+      <div className='w-1/2 flex flex-col inset-shadow-sm inset-shadow-gray-400 p-5 rounded-3xl h-fit'>
         <h4 className='text-gray-400 font-semibold'>USD Bloom in Action</h4>
         <h2 className='text-6xl font-semibold'>Use cases</h2>
         <h4 className='text-lg text-gray-400 font-medium mt-5'>USD Bloom offers a variety of use cases for <br /> developers, businesses and treasuries seeking <br /> secure and profitable stablecoin integrations</h4>
